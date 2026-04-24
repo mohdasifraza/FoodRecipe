@@ -1,0 +1,279 @@
+.blog{
+    text-align: center;
+}
+.blog-clor{
+    color: #bbb;
+}
+
+.subscribe-box {
+    background: #bfdef0;
+    border-radius: 30px;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.subscribe-form{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+}
+.subscribe-form input{
+/* background: wheat; */
+  width:300px;
+  padding:12px;
+  border:none;
+  border-radius:30px 0 0 30px;
+  outline:none;
+}
+
+.subscribe-form button{
+  padding:12px 25px;
+  border:none;
+  background:black;
+  color:white;
+  border-radius:0 30px 30px 0;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* BLOG ITEM */
+.blog-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.blog-item img {
+    width: 200px;
+    height: 140px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.blog-item .content h5 {
+    font-weight: 600;
+}
+
+.blog-item .content p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* AUTHOR */
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.author small {
+    margin-left: auto;
+    color: gray;
+}
+
+/* SIDEBAR */
+.side-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.side-item img {
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+/* BANNER */
+.banner {
+    background: #2f6f55;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.banner img {
+    width: 120px;
+    margin: 10px 0;
+}
+
+/* PAGINATION */
+.pagination-box {
+    display: flex;
+    gap: 16px;
+    margin-top: 37px;
+    margin-left: 489px;
+}
+
+.pagination-box span {
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #eee;
+    cursor: pointer;
+}
+
+.pagination-box .active {
+    background: black;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+    .blog-item {
+        flex-direction: column;
+    }
+
+    .blog-item img {
+        width: 100%;
+    }
+}
+
+
+/* SUBSCRIBE BOX */
+.subscribe-box {
+    background: #bfdef0;
+    border-radius: 30px;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.subscribe-box h2{
+  font-weight:700;
+  font-size:32px;
+}
+
+.subscribe-box p{
+  color:#666;
+  font-size:14px;
+  max-width:500px;
+  margin:auto;
+}
+
+/* INPUT */
+.subscribe-form{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+}
+
+.subscribe-form input{
+  width:300px;
+  padding:12px;
+  border:none;
+  border-radius:30px 0 0 30px;
+  outline:none;
+}
+
+.subscribe-form button{
+  padding:12px 25px;
+  border:none;
+  background:black;
+  color:white;
+  border-radius:0 30px 30px 0;
+}
+
+/* SIDE IMAGES */
+.left-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 308px;
+    height: 65%;
+}
+
+.right-img {
+    left: 814px;
+    position: absolute;
+    right: 0px;
+    width: 356px;
+    top: 109px;
+}
+
+/* FOOTER */
+.footer{
+  margin-top:60px;
+}
+
+.footer-top{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.footer h5{
+  font-weight:700;
+}
+
+.footer-links a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#000;
+}
+
+/* BOTTOM */
+.footer-bottom{
+  border-top:1px solid #ddd;
+  margin-top:20px;
+  padding-top:15px;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.social i{
+  margin-left:15px;
+  cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+  .subscribe-box h2{
+    font-size:24px;
+  }
+
+  .subscribe-form{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button{
+    width:100%;
+    border-radius:30px;
+  }
+
+  .left-img,
+  .right-img{
+    display:none;
+  }
+
+  .footer-top{
+    text-align:center;
+    gap:20px;
+  }
+
+  .footer-links a{
+    display:block;
+    margin:5px 0;
+  }
+
+  .footer-bottom{
+    text-align:center;
+    gap:10px;
+  }
+
+}
